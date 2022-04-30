@@ -1,6 +1,7 @@
 ﻿using QModManager.API.ModLoading;
 using HarmonyLib;
 using System.Reflection;
+using BepInEx.Logging;
 
 namespace MyMod
 {
@@ -9,6 +10,8 @@ namespace MyMod
     public static class MyInitializerClass
     {
         private static Assembly _assembly;
+        public static ManualLogSource _logger;
+
         private static Assembly Assembly
         {
             get
@@ -20,13 +23,15 @@ namespace MyMod
             }
         }
 
+        public static Harmony HarmonyInstance { get; private set; }
+
         // Your patching method must have the QModPatch attribute (and must be public)
         [QModPatch]
         public static void Init()
         {
-            // Add your patching code here
-            Harmony harmony = new Harmony("Your unique mods identifier");
-            harmony.PatchAll();
+            HarmonyInstance = new Harmony(Assembly.FullName);
+
+            HarmonyInstance.PatchAll();
         }
     }
 }
