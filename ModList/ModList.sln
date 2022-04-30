@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32414.318
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModList", "ModList.csproj", "{EBACD0FE-8A63-4CF6-B4BA-B85B53AE81CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBACD0FE-8A63-4CF6-B4BA-B85B53AE81CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EBACD0FE-8A63-4CF6-B4BA-B85B53AE81CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EBACD0FE-8A63-4CF6-B4BA-B85B53AE81CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EBACD0FE-8A63-4CF6-B4BA-B85B53AE81CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8C024EA9-55C5-49C8-8303-72BF71DA92E0}
+	EndGlobalSection
+EndGlobal
